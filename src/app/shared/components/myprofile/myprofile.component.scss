@@ -1,0 +1,85 @@
+.myprofile__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  .myprofile__description__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+
+    .myprofile__title {
+      font-size: 4rem;
+      margin-bottom: 0.875rem;
+    }
+
+    .myprofile__subtitle {
+      font-size: 1.75rem;
+    }
+
+    .myprofile__image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 0.875rem;
+    }
+
+    .myprofile__networks {
+      margin-top: 1.25rem;
+      display: flex;
+      gap: 0.85rem;
+
+      /* Tooltip container */
+      .myprofile__tooltip {
+        position: relative;
+        display: inline-block;
+      }
+
+      /* Tooltip text */
+      .myprofile__tooltip .myprofile__tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        font-size: 0.75rem;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        top: 125%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      /* Tooltip arrow */
+      .myprofile__tooltip .myprofile__tooltiptext::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent #555 transparent;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .myprofile__tooltip:hover .myprofile__tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
