@@ -6,7 +6,7 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
-}
+
 
 .about-me {
   display: flex;
@@ -15,10 +15,9 @@
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
-  padding: 1.5rem 0;
 
   .about-me__content {
-    padding: 1rem 0;
+    padding: 1.5rem;
     font-size: 1.5rem;
   }
 
@@ -36,16 +35,51 @@
 .portfolio {
   background: rgb(29, 28, 28);
   color: #fff;
-  display: flex;
+  text-align: center;
   padding: 75px 0;
-  align-items: center;
-  flex-direction: column;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 
   .portfolio__title {
     font-size: 2.125rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.235;
     letter-spacing: 0.00735em;
   }
 }
+
+.card-projects__title {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.card-projects {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.technologies__title {
+  font-size: 2.125rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight:500;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.technologies {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+}
+
+
+

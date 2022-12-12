@@ -1,0 +1,12 @@
+<div class="card-box" [ngStyle]="{'background-color': data.background}">
+    <div class="card-box__image">
+      <img [src]="data.image" alt="">
+    </div>
+    <div class="content">
+      <h2 class="card-box__title"> {{ data.title }} </h2>
+      <p class="card-box__description"> {{ data.content }} </p>
+    </div>
+    <div>
+      <a class="card-box__link" href=""> {{ data.link }} </a>
+    </div>
+</div>

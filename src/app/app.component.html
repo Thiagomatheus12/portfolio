@@ -2,8 +2,8 @@
 <div class="bg">
   <app-myprofile></app-myprofile>
 </div>
-<div class="about-me">
-  <div class="container">
+<div class="container">
+  <div class="about-me">
     <div class="about-me__content">
       <p class="about-me__title">Ei!</p>
       <p class="about-me__text">Eu sou Thiago Matheus Costa De Sousa! <br>
@@ -11,9 +11,21 @@
         Sinta-se à vontade para entrar em contato ou dar uma olhada no meu trabalho anterior abaixo.</p>
     </div>
   </div>
+
+  <div class="portfolio">
+    <h4 class="portfolio__title">Portfólio</h4>
+  </div>
+
+  <h2 class="card-projects__title">Meus principais projetos</h2>
+  <div class="card-projects">
+    <app-card-projects *ngFor="let card of projects" [data]="card"></app-card-projects>
+  </div>
+
+  <h2 class="technologies__title">Tecnologias</h2>
+  <div class="technologies">
+    <app-card-technologies *ngFor="let item of technologies" [data]="item"></app-card-technologies>
+  </div>
 </div>
 
-<div class="portfolio">
-  <h4 class="portfolio__title">Portfólio</h4>
-</div>
+
 <router-outlet></router-outlet>

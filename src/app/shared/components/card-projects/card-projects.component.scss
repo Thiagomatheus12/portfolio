@@ -1,0 +1,33 @@
+.card-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  min-width: 150px;
+  background-color: rgb(255, 14, 14);
+  color: white;
+  border-radius: 3px;
+
+  .card-box__image {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .card-box__title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+
+  .card-box__description {
+    font-weight: 400;
+    margin-bottom: 6rem;
+  }
+
+  .card-box__link {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  min-width: 200px;
+  background: blue;
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .technologies__title {
+    margin-right: 0.875rem;
+    font-weight: 500;
+  }
+}
