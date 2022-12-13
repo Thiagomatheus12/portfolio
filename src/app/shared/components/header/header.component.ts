@@ -13,13 +13,21 @@ export class HeaderComponent implements OnInit {
     { label: 'Tecnologias', id: 'technologies' }
   ]
 
+  showModal = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  switchModal(): void {
+    this.showModal = !this.showModal;
+  }
+
+
   navigate(idElement: string): void {
     location.href = "#" + idElement;
+    document.getElementById('checkbox-menu')?.click();
   }
 
 }
