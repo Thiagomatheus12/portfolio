@@ -90,6 +90,11 @@
   gap: 2rem;
   justify-content: center;
   margin-bottom: 2rem;
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    margin: 2rem;
+  }
 }
 
 
