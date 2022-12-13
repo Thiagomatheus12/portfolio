@@ -14,4 +14,15 @@ a {
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+
 

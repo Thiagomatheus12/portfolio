@@ -1,10 +1,11 @@
+<div class="container">
 <app-header></app-header>
 <div class="bg">
   <app-myprofile></app-myprofile>
 </div>
-<div class="container">
+<div id="about-me"></div>
   <div class="about-me">
-    <div class="about-me__content">
+    <div class="about-me__content" >
       <p class="about-me__title">Ei!</p>
       <p class="about-me__text">Eu sou Thiago Matheus Costa De Sousa! <br>
         Adoro programar, e aprender coisas novas!<br>
@@ -12,7 +13,7 @@
     </div>
   </div>
 
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <h4 class="portfolio__title">Portfólio</h4>
   </div>
 
@@ -21,9 +22,12 @@
     <app-card-projects *ngFor="let card of projects" [data]="card"></app-card-projects>
   </div>
 
-  <h2 class="technologies__title">Tecnologias</h2>
+  <h2 class="technologies__title" id="technologies">Tecnologias</h2>
   <div class="technologies">
     <app-card-technologies *ngFor="let item of technologies" [data]="item"></app-card-technologies>
+  </div>
+  <div class="footer">
+    <app-footer></app-footer>
   </div>
 </div>
 

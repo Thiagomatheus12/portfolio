@@ -1,33 +1,35 @@
-.card-box {
+.card-projects {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   width: 100%;
   min-width: 150px;
-  background-color: rgb(255, 14, 14);
+  background-color: rgb(117, 22, 22);
   color: white;
   border-radius: 3px;
 
-  .card-box__image {
+  .card-projects__image {
     text-align: center;
     margin-bottom: 2rem;
   }
 
-  .card-box__title {
+  .card-projects__title {
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.0075em;
   }
 
-  .card-box__description {
+  .card-projects__description {
     font-weight: 400;
     margin-bottom: 6rem;
   }
 
-  .card-box__link {
+  .card-projects__link {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
   }
+
+
 }

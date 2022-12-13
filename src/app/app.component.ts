@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    this.clearFragment();
+  }
 
   projects: Array<CardProjectsData> = [
-    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat ducimus nobis nisi culpa cumque odio in? Blanditiis voluptatum alias tenetur cupiditate perspiciatis, velit porro eos illo neque magnam? Quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.', link: 'Viste o Site'},
+    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat ducimus nobis nisi culpa cumque odio in? Blanditiis voluptatum alias tenetur cupiditate perspiciatis, velit porro eos illo neque magnam? Quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.', link: 'Viste o Site', background: '#0000ff'},
     {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat ducimus nobis nisi culpa cumque odio in? Blanditiis voluptatum alias tenetur cupiditate perspiciatis, velit porro eos illo neque magnam? Quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.', link: 'Viste o Site'},
     {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat ducimus nobis nisi culpa cumque odio in? Blanditiis voluptatum alias tenetur cupiditate perspiciatis, velit porro eos illo neque magnam? Quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.', link: 'Viste o Site', background: '#336'}
   ]
@@ -19,6 +22,10 @@ export class AppComponent {
     {title: 'HTML5', image: './assets/img/icon-html5.svg'},
     {title: 'CSS3',image: './assets/img/icon-css3.svg'}
   ]
+
+  clearFragment(): void {
+    window.location.hash = '';
+  }
 }
 
 

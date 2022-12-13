@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MyprofileComponent } from './components/myprofile/myprofile.component';
 import { CardProjectsComponent } from './components/card-projects/card-projects.component';
 import { CardTechnologiesComponent } from './components/card-technologies/card-technologies.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -12,7 +13,8 @@ import { CardTechnologiesComponent } from './components/card-technologies/card-t
     HeaderComponent,
     MyprofileComponent,
     CardProjectsComponent,
-    CardTechnologiesComponent
+    CardTechnologiesComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule
@@ -21,7 +23,8 @@ import { CardTechnologiesComponent } from './components/card-technologies/card-t
     HeaderComponent,
     MyprofileComponent,
     CardProjectsComponent,
-    CardTechnologiesComponent
+    CardTechnologiesComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
