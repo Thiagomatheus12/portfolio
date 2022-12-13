@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   ]
 
   technologies: Array<CardTechnologiesData> = [
-    {title: 'AngularJs', image: './assets/img/icon-angular.svg'},
+    {title: 'Angular', image: './assets/img/icon-angular.svg'},
     {title: 'ReactJs', image: './assets/img/icon-react.svg'},
     {title: 'HTML5', image: './assets/img/icon-html5.svg'},
     {title: 'CSS3',image: './assets/img/icon-css3.svg'}
