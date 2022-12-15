@@ -3,127 +3,122 @@
   background: rgb(29, 28, 28);
   width: 100vw;
   margin-left: calc(50% - 50vw);
-
-  // @media (max-width: 425px) {
-  //   width: 100%;
-  //   margin: 0;
-  // }
 }
 
 .container {
-  max-width: 1280px;
-  margin: 0 auto;
 
-.about-me {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  padding: 4.5rem 1.5rem;
+  .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem;
 
-  .about-me__content {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    .about-me__content {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .about-me__title {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .about-me__text {
+      font-size: 2rem;
+    }
+
+    @media (max-width: 425px) {
+      .about-me__title {
+        font-size: 2rem;
+      }
+
+      .about-me__text {
+        font-size: 1.5rem;
+      }
+    }
   }
 
-  .about-me__title {
-    font-size: 3rem;
+  .portfolio {
+    background: rgb(29, 28, 28);
+    color: #fff;
+    text-align: center;
+    padding: 75px 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    .portfolio__title {
+      font-size: 2.125rem;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-weight: 500;
+      line-height: 1.235;
+      letter-spacing: 0.00735em;
+    }
+  }
+
+  .card-projects__title {
     font-weight: 500;
-    margin-bottom: 1rem;
-  }
-
-  .about-me__text{
     font-size: 2rem;
+    text-align: center;
+    margin: 3rem 0;
   }
-}
 
-.portfolio {
-  background: rgb(29, 28, 28);
-  color: #fff;
-  text-align: center;
-  padding: 75px 0;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  .projects {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
 
-  .portfolio__title {
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 350px;
+    }
+
+    @media (max-width: 425px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .technologies__title {
     font-size: 2.125rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 500;
     line-height: 1.235;
     letter-spacing: 0.00735em;
-  }
-}
-
-.card-projects__title {
-  font-weight: 500;
-  font-size: 2rem;
-  text-align: center;
-  margin: 3rem 0;
-}
-
-.card-projects {
-  display: flex;
-  gap: 2rem;
-  padding: 0 1.5rem;
-  margin-bottom: 3rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 350px;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
 
-  @media (max-width: 425px) {
-    flex-direction: column;
-}
-}
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    justify-content: center;
+    gap: 1rem;
 
-.technologies__title {
-  font-size: 2.125rem;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight:500;
-  line-height: 1.235;
-  letter-spacing: 0.00735em;
-  text-align: center;
-  margin-bottom: 2rem;
-  margin: 2rem 0;
-}
+    @media (max-width: 768px) {
+      .technologies__card {
+        flex: 40%;
+      }
+    }
 
-.technologies {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2rem;
-
-  @media (max-width: 768px) {
-    .technologies__card{
-      flex: 40%;
-      margin: 1rem;
+    @media (max-width: 425px) {
+      flex-wrap: wrap;
     }
   }
 
-  @media (max-width: 425px) {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    .technologies__card {
-      margin: 2rem;
-    }
+  .footer {
+    background: rgb(29, 28, 28);
+    color: #fff;
+    text-align: center;
+    padding: 75px 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
   }
 }
-
-
-.footer {
-  background: rgb(29, 28, 28);
-  color: #fff;
-  text-align: center;
-  padding: 75px 0;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-}
-}
-
-
-

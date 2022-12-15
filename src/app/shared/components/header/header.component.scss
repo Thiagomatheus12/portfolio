@@ -1,3 +1,4 @@
+
 .header {
   background: rgb(29, 28, 28);
   height: 60px;
@@ -6,14 +7,9 @@
   margin-left: calc(50% - 50vw);
   position: fixed;
   left: 0;
-
-  .header__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 25px;
-  }
-
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 
   .header__list {
     display: flex;
@@ -29,6 +25,10 @@
     &:hover {
       color: rgb(226, 224, 224);
     }
+  }
+
+  .header__hamburger {
+    display: none;
   }
 
   .header__menu {
@@ -48,15 +48,78 @@
     margin: 0;
   }
 
-  @media (max-width: 425px) {
-    margin: 0;
+  @media (max-width: 428px) {
+
+    .header__list {
+      display: none;
+    }
+    .header__hamburger {
+      display: block;
+    }
 
     .header__title {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
+    }-size: 0.875rem;
     }
-    .header__link {
-      font-size: 0.875rem;
-    }
+
+}
+
+.modal {
+  background: #fff;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  z-index: 2;
+  right: 0;
+  padding: 4rem 2rem;
+
+  .header__hamburger {
+    position: absolute;
+    right: 10%;
+    top: 2%;
+  }
+
+  .modal__list {
+    list-style: none;
+  }
+
+  .modal__item {
+    font-size: 1.75rem;
+  }
+
+  .modal__link {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+  }
+
+}
+
+.modal__overlay {
+  background-color: #000;
+  height: 100vh;
+  left: 0;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal__animation {
+  animation: fadeInRight 0.75s ease-in-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
   }
 }
+
+
 

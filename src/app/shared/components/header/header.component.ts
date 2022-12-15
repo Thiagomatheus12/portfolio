@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
   menus = [
     { label: 'Sobre mim', id: 'about-me' },
@@ -13,13 +13,11 @@ export class HeaderComponent implements OnInit {
     { label: 'Tecnologias', id: 'technologies' }
   ]
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  showModal = false;
 
   navigate(idElement: string): void {
     location.href = "#" + idElement;
+    document.getElementById('checkbox-menu')?.click();
   }
 
 }

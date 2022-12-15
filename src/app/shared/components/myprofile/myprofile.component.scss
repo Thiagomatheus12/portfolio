@@ -17,10 +17,18 @@
       font-size: 4rem;
       margin-bottom: 0.875rem;
       text-align: center;
+
+      @media (max-width: 425px) {
+        font-size: 3rem;
+      }
     }
 
     .myprofile__subtitle {
       font-size: 1.75rem;
+
+      @media (max-width: 425px) {
+        font-size: 1.5rem;
+      }
     }
 
     .myprofile__image {
@@ -83,7 +91,6 @@
       }
     }
   }
-
 
 
 }
