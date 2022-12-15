@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  
+
   ngOnInit(): void {
     this.clearFragment();
   }
 
   projects: Array<CardProjectsData> = [
-    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat ducimus nobis nisi culpa cumque odio in? Blanditiis voluptatum alias tenetur cupiditate perspiciatis, velit porro eos illo neque magnam? Quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.', link: 'Viste o Site', background: '#0000ff'},
-    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat ducimus nobis nisi culpa cumque odio in? Blanditiis voluptatum alias tenetur cupiditate perspiciatis, velit porro eos illo neque magnam? Quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.', link: 'Viste o Site'},
-    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat ducimus nobis nisi culpa cumque odio in? Blanditiis voluptatum alias tenetur cupiditate perspiciatis, velit porro eos illo neque magnam? Quia. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda.', link: 'Viste o Site', background: '#336'}
+    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'To-do List é uma lista onde você pode armezenar suas tarefas diárias, marcar elas como finalizadas, deixando tudo organizado sem deixar nenhuma tarefa para trás.', linkTitle: 'Visite o Site', background: '#0000ff', link: 'https://to-do-list-pi-green.vercel.app/'},
+    {image: './assets/img/icon-laptoppng.png', title: 'To-do List', content: 'To-do List é uma lista onde você pode armezenar suas tarefas diárias, marcar elas como finalizadas, deixando tudo organizado sem deixar nenhuma tarefa para trás.', linkTitle: 'Visite o Site', link: 'https://to-do-list-pi-green.vercel.app/'},
+    {image: './assets/img/icon-laptoppng.png', title: 'Facebook Login', content: 'Replicando a tela de login do Facebook, com validações um pouco diferente do original. Nesse projeto me dediquei bastante nas validações dos inputs.', linkTitle: 'Visite o Site', background: '#336', link: 'https://facebook-murex.vercel.app/#'}
   ]
 
   technologies: Array<CardTechnologiesData> = [
