@@ -90,6 +90,12 @@
         opacity: 1;
       }
     }
+
+    @media (max-width: 425px) {
+      .myprofile__tooltiptext {
+        display: none;
+      }
+    }
   }
 
 

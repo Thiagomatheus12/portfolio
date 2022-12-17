@@ -60,5 +60,11 @@
     }
   }
 
+  @media (max-width: 425px) {
+    .footer__tooltiptext {
+      display: none;
+    }
+  }
+
 }
 
