@@ -77,16 +77,16 @@
       flex: 1;
     }
 
-    // @media (max-width: 768px) {
-    //   flex: 40%;
-    //   flex-direction: column;
-    //   margin: 0 auto;
-    //   max-width: 350px;
-    // }
+    @media (max-width: 768px) {
+      flex: 40%;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 350px;
+    }
 
-    // @media (max-width: 425px) {
-    //   flex-wrap: wrap;
-    // }
+    @media (max-width: 425px) {
+      flex-wrap: wrap;
+    }
   }
 
   .technologies__title {
