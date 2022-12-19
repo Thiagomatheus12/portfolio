@@ -44,7 +44,7 @@
   }
 
   .portfolio {
-    background: rgb(29, 28, 28);
+    background: #1d1c1c;
     color: #fff;
     text-align: center;
     padding: 75px 0;
@@ -69,19 +69,24 @@
 
   .projects {
     display: flex;
-    gap: 1rem;
-    padding: 0 1.5rem;
-    margin-bottom: 3rem;
+    // padding: 0 1.5rem;
+    // margin-bottom: 3rem;
 
-    @media (max-width: 768px) {
-      flex-direction: column;
-      margin: 0 auto;
-      max-width: 350px;
+    .card-projects {
+      margin: 1rem;
+      flex: 1;
     }
 
-    @media (max-width: 425px) {
-      flex-wrap: wrap;
-    }
+    // @media (max-width: 768px) {
+    //   flex: 40%;
+    //   flex-direction: column;
+    //   margin: 0 auto;
+    //   max-width: 350px;
+    // }
+
+    // @media (max-width: 425px) {
+    //   flex-wrap: wrap;
+    // }
   }
 
   .technologies__title {

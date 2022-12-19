@@ -4,5 +4,5 @@ interface CardProjectsData {
   linkTitle: string;
   link: string;
   image: string;
-  background?: string;
+  background: string;
 }

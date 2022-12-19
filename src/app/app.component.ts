@@ -12,9 +12,9 @@ export class AppComponent implements OnInit {
   }
 
   projects: Array<CardProjectsData> = [
-    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'To-do List é uma lista onde você pode armezenar suas tarefas diárias, marcar elas como finalizadas, deixando tudo organizado sem deixar nenhuma tarefa para trás.', linkTitle: 'Visite o Site', background: '#0000ff', link: 'https://to-do-list-pi-green.vercel.app/'},
-    {image: './assets/img/icon-laptoppng.png', title: 'To-do List', content: 'To-do List é uma lista onde você pode armezenar suas tarefas diárias, marcar elas como finalizadas, deixando tudo organizado sem deixar nenhuma tarefa para trás.', linkTitle: 'Visite o Site', link: 'https://to-do-list-pi-green.vercel.app/'},
-    {image: './assets/img/icon-laptoppng.png', title: 'Facebook Login', content: 'Replicando a tela de login do Facebook, com validações um pouco diferente do original. Nesse projeto me dediquei bastante nas validações dos inputs.', linkTitle: 'Visite o Site', background: '#336', link: 'https://facebook-murex.vercel.app/#'}
+    {image: './assets/img/icon-laptoppng.png', title: 'Project', content: 'To-do List é uma lista onde você pode armezenar suas tarefas diárias, marcar elas como finalizadas, deixando tudo organizado sem deixar nenhuma tarefa para trás.', linkTitle: 'Visite o Site', background:'rgb(10, 116, 219)', link: 'https://to-do-list-pi-green.vercel.app/'},
+    {image: './assets/img/icon-laptoppng.png', title: 'To-do List', content: 'To-do List é uma lista onde você pode armezenar suas tarefas diárias, marcar elas como finalizadas, deixando tudo organizado sem deixar nenhuma tarefa para trás.', linkTitle: 'Visite o Site', link: 'https://to-do-list-pi-green.vercel.app/', background:'rgb(129 29 29)'},
+    {image: './assets/img/icon-laptoppng.png', title: 'Facebook Login', content: 'Replicando a tela de login do Facebook, com validações um pouco diferente do original. Nesse projeto me dediquei bastante nas validações dos', linkTitle: 'Visite o Site', background:'rgb(27 65 163);', link: 'https://facebook-murex.vercel.app/#'}
   ]
 
   technologies: Array<CardTechnologiesData> = [
